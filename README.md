@@ -10,15 +10,15 @@ Do visit my YouTube channel https://www.youtube.com/@CodingwalaShree for videos 
 * Architectural discussions
 
 
-##YouTube Channel
+## YouTube Channel
 * [CodingWalaShree](https://www.youtube.com/@CodingwalaShree)
 
 
-##YouTube Playlists
+## YouTube Playlists
 * [Java 8 Features](https://www.youtube.com/watch?v=meFi5pR-Y4w&list=PL0NAuwT3sREIpmVKgApk2vauQ4zWAenen&pp=iAQB)
 
 
-##YouTube Videos
+## YouTube Videos
 * [Understanding Default and Static Methods in Java 8 - Part 1](https://www.youtube.com/watch?v=meFi5pR-Y4w)
 * [Understanding Default and Static Methods in Java 8 - Part 2](https://www.youtube.com/watch?v=0RbiKB3t0Qk)
 * [Understanding Default and Static Methods in Java 8 - Part 3](https://www.youtube.com/watch?v=xq3vbXNPnac)
