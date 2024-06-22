@@ -14,7 +14,7 @@ Do visit my YouTube channel https://www.youtube.com/@CodingwalaShree for videos 
 * [CodingWalaShree](https://www.youtube.com/@CodingwalaShree)
 
 
-##YouTube Playlist
+##YouTube Playlists
 * [Java 8 Features](https://www.youtube.com/watch?v=meFi5pR-Y4w&list=PL0NAuwT3sREIpmVKgApk2vauQ4zWAenen&pp=iAQB)
 
 
