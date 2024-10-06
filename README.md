@@ -8,7 +8,7 @@ Follow my 🔴 YouTube channel "Coding Wala Shree" for more videos on Java, Kotl
 
 ### Videos on [Coding Wala Shree](https://www.youtube.com/@CodingwalaShree)
 
-<\br>
+
 #### video comparing Java vs Kotlin:
 
 Find out answers to the questions like:
