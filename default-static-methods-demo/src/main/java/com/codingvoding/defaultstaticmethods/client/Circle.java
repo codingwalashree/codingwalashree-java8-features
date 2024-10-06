@@ -3,6 +3,8 @@ package com.codingvoding.defaultstaticmethods.client;
 import com.codingvoding.defaultstaticmethods.math.Printable;
 import com.codingvoding.defaultstaticmethods.math.Shape;
 
+import java.util.List;
+
 public class Circle implements Shape, Printable {
     private double radius;
 
