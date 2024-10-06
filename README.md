@@ -9,49 +9,6 @@ Follow my 🔴 YouTube channel "Coding Wala Shree" for more videos on Java, Kotl
 ### Videos on [Coding Wala Shree](https://www.youtube.com/@CodingwalaShree)
 
 
-#### video comparing Java vs Kotlin:
-
-Find out answers to the questions like:
-- Java Developer's Job at Risk? Learn Kotlin?
-- How Kotlin is gaining popularity in Android development.
-- Whether Kotlin can replace Java in the long run.
-- Java’s evolving features to stay relevant in modern development.
-- Key factors like code readability, performance, and community support.
-
-
-<table>
-   <tr style="border:none !important;">
-      <td style="border:none !important;">
-         <a href="https://www.youtube.com/watch?v=dp_KyRtzAzw
-           " target="_blank"><img src="http://img.youtube.com/vi/dp_KyRtzAzw/0.jpg"
-           alt="Java Developer's Job at Risk? Learn Kotlin?" width="200" height="150" border="0" /></a>
-      </td>
-    </tr>
-</table>
-
-
-#### Videos on Core Java:
-
-<table style="border:none !important;">
-   <tr style="border:none !important;">
-      <td style="border:none !important;">
-         <a href="http://www.youtube.com/watch?feature=player_embedded&v=NZK5p3RIUic
-           " target="_blank"><img src="http://img.youtube.com/vi/NZK5p3RIUic/0.jpg"
-           alt="Understanding Interfaces in Java : Secret to Cleaner Code" width="200" height="150" border="0" /></a>
-      </td>
-      <td style="border:none !important;">
-         <a href="http://www.youtube.com/watch?feature=player_embedded&v=5L4U87By3_Y
-           " target="_blank"><img src="http://img.youtube.com/vi/5L4U87By3_Y/0.jpg"
-           alt="Why You Should Use Abstract Classes in Java" width="200" height="150" border="0" /></a>
-      </td>
-      <td style="border:none !important;">
-         <a href="http://www.youtube.com/watch?feature=player_embedded&v=mPj7CH8zCaU
-           " target="_blank"><img src="http://img.youtube.com/vi/mPj7CH8zCaU/0.jpg"
-           alt="Abstract Classes vs Interfaces in Java" width="200" height="150" border="0" /></a>
-      </td>
-   </tr>
-</table>
-
 #### Videos on Default and Static Interface Methods in Java:
 
 <table>
@@ -95,6 +52,50 @@ Find out answers to the questions like:
       </td>
    </tr>
 </table>
+
+#### Videos on Core Java:
+
+<table style="border:none !important;">
+   <tr style="border:none !important;">
+      <td style="border:none !important;">
+         <a href="http://www.youtube.com/watch?feature=player_embedded&v=NZK5p3RIUic
+           " target="_blank"><img src="http://img.youtube.com/vi/NZK5p3RIUic/0.jpg"
+           alt="Understanding Interfaces in Java : Secret to Cleaner Code" width="200" height="150" border="0" /></a>
+      </td>
+      <td style="border:none !important;">
+         <a href="http://www.youtube.com/watch?feature=player_embedded&v=5L4U87By3_Y
+           " target="_blank"><img src="http://img.youtube.com/vi/5L4U87By3_Y/0.jpg"
+           alt="Why You Should Use Abstract Classes in Java" width="200" height="150" border="0" /></a>
+      </td>
+      <td style="border:none !important;">
+         <a href="http://www.youtube.com/watch?feature=player_embedded&v=mPj7CH8zCaU
+           " target="_blank"><img src="http://img.youtube.com/vi/mPj7CH8zCaU/0.jpg"
+           alt="Abstract Classes vs Interfaces in Java" width="200" height="150" border="0" /></a>
+      </td>
+   </tr>
+</table>
+
+
+#### Video comparing Java vs Kotlin:
+
+Find out answers to the questions like:
+- Java Developer's Job at Risk? Learn Kotlin?
+- How Kotlin is gaining popularity in Android development.
+- Whether Kotlin can replace Java in the long run.
+- Java’s evolving features to stay relevant in modern development.
+- Key factors like code readability, performance, and community support.
+
+
+<table>
+   <tr style="border:none !important;">
+      <td style="border:none !important;">
+         <a href="https://www.youtube.com/watch?v=dp_KyRtzAzw
+           " target="_blank"><img src="http://img.youtube.com/vi/dp_KyRtzAzw/0.jpg"
+           alt="Java Developer's Job at Risk? Learn Kotlin?" width="200" height="150" border="0" /></a>
+      </td>
+    </tr>
+</table>
+
 
 ### Playlists
 * ▶ [ Java 8 Features ](https://www.youtube.com/playlist?list=PL0NAuwT3sREIpmVKgApk2vauQ4zWAenen)
