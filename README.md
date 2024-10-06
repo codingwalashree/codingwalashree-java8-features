@@ -9,7 +9,16 @@ Follow my 🔴 YouTube channel "Coding Wala Shree" for more videos on Java, Kotl
 ### Videos on [Coding Wala Shree](https://www.youtube.com/@CodingwalaShree)
 
 
-#### Check out my video comparing Java vs Kotlin and learn more about the strengths of both languages.
+#### video comparing Java vs Kotlin:
+
+Find out answers to the questions like:
+- Java Developer's Job at Risk? Learn Kotlin?
+- How Kotlin is gaining popularity in Android development.
+- Whether Kotlin can replace Java in the long run.
+- Java’s evolving features to stay relevant in modern development.
+- Key factors like code readability, performance, and community support.
+
+
 <table>
    <tr style="border:none !important;">
       <td style="border:none !important;">
