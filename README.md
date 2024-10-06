@@ -97,9 +97,16 @@ Find out answers to the questions like:
 </table>
 
 
-### Playlists
+### YouTube Playlists:
 * ▶ [ Java 8 Features ](https://www.youtube.com/playlist?list=PL0NAuwT3sREIpmVKgApk2vauQ4zWAenen)
 * ▶ [ Core Java ](https://www.youtube.com/playlist?list=PL0NAuwT3sREK2RpKdYhCM-7J9hoaPr9oY)
 * ▶ [ Java Interview Preparation ](https://www.youtube.com/playlist?list=PL0NAuwT3sRELG-VTgkp9qMelukbqMxuQK)
 * ▶ [ Kotlin Essentials ](https://www.youtube.com/watch?list=PL0NAuwT3sREJIquQlohcGhwfQJ7QhtEeb)
+
+
+### GitHub Projects:
+Links to other GitHub projects are as followed:
+* [ Abstract Classes and Interfaces in Java with examples ](https://github.com/codingwalashree/codingwalashree-abstract-class-interface-demo)
+* [ Jav 8 Features with examples ](https://github.com/codingwalashree/codingwalashree-java8-features)
+* [ Kotlin Essentials with examples ](https://github.com/codingwalashree/kotlin-fundamentals)
 
