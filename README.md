@@ -9,7 +9,24 @@ Follow my 🔴 YouTube channel "Coding Wala Shree" for more videos on Java, Kotl
 ### Videos on [Coding Wala Shree](https://www.youtube.com/@CodingwalaShree)
 
 
-#### Videos on Default and Static Interface Methods in Java:
+#### Stream APIs:
+
+<table>
+   <tr style="border:none !important;">
+      <td style="border:none !important;">
+         <a href="http://www.youtube.com/watch?feature=player_embedded&v=Dox6YeuDPtk
+           " target="_blank"><img src="http://img.youtube.com/vi/Dox6YeuDPtk/0.jpg"
+           alt="Master Stream API - Game Changing Java 8 Feature - PART 1" width="200" height="150" border="0" /></a>
+      </td>
+      <td style="border:none !important;">
+         <a href="http://www.youtube.com/watch?feature=player_embedded&v=THQ1TApfuhg
+           " target="_blank"><img src="http://img.youtube.com/vi/THQ1TApfuhg/0.jpg"
+           alt="9 Ways to Create Streams in Java 8 - PART 2" width="200" height="150" border="0" /></a>
+      </td>
+   </tr>
+</table>
+
+#### Default and Static Interface Methods:
 
 <table>
    <tr style="border:none !important;">
@@ -31,7 +48,7 @@ Follow my 🔴 YouTube channel "Coding Wala Shree" for more videos on Java, Kotl
    </tr>
 </table>
 
-#### Videos on Lambda Expressions and Functional Interfaces in Java:
+#### Lambda Expressions and Functional Interfaces:
 
 <table>
    <tr style="border:none !important;">
@@ -53,7 +70,7 @@ Follow my 🔴 YouTube channel "Coding Wala Shree" for more videos on Java, Kotl
    </tr>
 </table>
 
-#### Videos on Core Java:
+#### Core Java:
 
 <table style="border:none !important;">
    <tr style="border:none !important;">
@@ -76,7 +93,7 @@ Follow my 🔴 YouTube channel "Coding Wala Shree" for more videos on Java, Kotl
 </table>
 
 
-#### Video comparing Java vs Kotlin:
+#### Comparing Java vs Kotlin:
 
 Find out answers to the questions like:
 - Java Developer's Job at Risk? Learn Kotlin?
