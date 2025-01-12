@@ -1,14 +1,16 @@
 package org.cws.optionals.model;
 
+import java.util.Optional;
+
 // Person -> Car -> Insurance
 public class Person {
-    private Car car;
+    private Optional<Car> car;
 
     public Person(Car car) {
-        this.car = car;
+        this.car = Optional.ofNullable(car);
     }
 
-    public Car getCar() { return car; }
+    public Optional<Car> getCar() { return car; }
 
     public String getInsuranceCompanyName() {
         // TODO: To be implemented
