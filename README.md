@@ -2,14 +2,24 @@
 
 This source code has been created to demonstrate important Java 8 features by CodingWalaShree.
 
-Follow my 🔴 YouTube channel "Coding Wala Shree" for more videos on Java, Kotlin and software architecture concepts:
+Follow my 🔴 YouTube channel [Coding Wala Shree](https://www.youtube.com/@CodingwalaShree) for more videos on Java, Kotlin and software architecture concepts.
 
 #CodingWalaShree #Java #Java8 #Java8Features #Kotlin #LearnProgramming
 
 ### Videos on [Coding Wala Shree](https://www.youtube.com/@CodingwalaShree)
 
+#### ▶️ Optional Class:
+<table>
+   <tr style="border:none !important;">
+      <td style="border:none !important;">
+         <a href="http://www.youtube.com/watch?feature=player_embedded&v=wsfRJFqvPS0
+           " target="_blank"><img src="http://img.youtube.com/vi/wsfRJFqvPS0/0.jpg"
+           alt="Master Java 8 Optional: Say Goodbye to NullPointerExceptions 🚀" width="200" height="150" border="0" /></a>
+      </td>
+   </tr>
+</table>
 
-#### Stream APIs:
+#### ▶️ Stream APIs:
 
 <table>
    <tr style="border:none !important;">
@@ -21,12 +31,12 @@ Follow my 🔴 YouTube channel "Coding Wala Shree" for more videos on Java, Kotl
       <td style="border:none !important;">
          <a href="http://www.youtube.com/watch?feature=player_embedded&v=THQ1TApfuhg
            " target="_blank"><img src="http://img.youtube.com/vi/THQ1TApfuhg/0.jpg"
-           alt="9 Ways to Create Streams in Java 8 - PART 2" width="200" height="150" border="0" /></a>
+           alt="9 Ways to Create Streams in Java 8 - Everything you need to know - PART 2" width="200" height="150" border="0" /></a>
       </td>
    </tr>
 </table>
 
-#### Default and Static Interface Methods:
+#### ▶️ Default and Static Interface Methods:
 
 <table>
    <tr style="border:none !important;">
@@ -48,7 +58,7 @@ Follow my 🔴 YouTube channel "Coding Wala Shree" for more videos on Java, Kotl
    </tr>
 </table>
 
-#### Lambda Expressions and Functional Interfaces:
+#### ▶️ Lambda Expressions and Functional Interfaces:
 
 <table>
    <tr style="border:none !important;">
@@ -70,7 +80,7 @@ Follow my 🔴 YouTube channel "Coding Wala Shree" for more videos on Java, Kotl
    </tr>
 </table>
 
-#### Core Java:
+#### ▶️ Core Java:
 
 <table style="border:none !important;">
    <tr style="border:none !important;">
@@ -93,7 +103,7 @@ Follow my 🔴 YouTube channel "Coding Wala Shree" for more videos on Java, Kotl
 </table>
 
 
-#### Comparing Java vs Kotlin:
+#### ▶️ Java vs Kotlin:
 
 Find out answers to the questions like:
 - Java Developer's Job at Risk? Learn Kotlin?
@@ -114,7 +124,7 @@ Find out answers to the questions like:
 </table>
 
 
-### YouTube Playlists:
+### 🎥 YouTube Playlists:
 * ▶ [ Java 8 Features ](https://www.youtube.com/playlist?list=PL0NAuwT3sREIpmVKgApk2vauQ4zWAenen)
 * ▶ [ Core Java ](https://www.youtube.com/playlist?list=PL0NAuwT3sREK2RpKdYhCM-7J9hoaPr9oY)
 * ▶ [ Java Interview Preparation ](https://www.youtube.com/playlist?list=PL0NAuwT3sRELG-VTgkp9qMelukbqMxuQK)
