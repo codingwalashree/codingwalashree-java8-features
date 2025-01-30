@@ -99,6 +99,11 @@ Follow my 🔴 YouTube channel [Coding Wala Shree](https://www.youtube.com/@Codi
            " target="_blank"><img src="http://img.youtube.com/vi/mPj7CH8zCaU/0.jpg"
            alt="Abstract Classes vs Interfaces in Java" width="200" height="150" border="0" /></a>
       </td>
+      <td style="border:none !important;">
+         <a href="http://www.youtube.com/watch?feature=player_embedded&v=bL51oOaAllo
+           " target="_blank"><img src="http://img.youtube.com/vi/bL51oOaAllo/0.jpg"
+           alt="JDK vs JRE vs JVM in 3 minutes!" width="200" height="150" border="0" /></a>
+      </td>
    </tr>
 </table>
 
@@ -123,17 +128,34 @@ Find out answers to the questions like:
     </tr>
 </table>
 
+#### ▶️ Environment Setups
+
+<table>
+   <tr style="border:none !important;">
+      <td style="border:none !important;">
+         <a href="https://www.youtube.com/watch?v=uWAL4KHSjMU
+           " target="_blank"><img src="http://img.youtube.com/vi/uWAL4KHSjMU/0.jpg"
+           alt="FREE!! How to install JDK / Java? : Step-by-Step JDK Setup / Troubleshoot" width="200" height="150" border="0" /></a>
+      </td>
+      <td style="border:none !important;">
+         <a href="https://www.youtube.com/watch?v=RY9YgLToNmE
+           " target="_blank"><img src="http://img.youtube.com/vi/RY9YgLToNmE/0.jpg"
+           alt="FREE!! How to Install IntelliJ IDEA : Best Editor/IDE for Java" width="200" height="150" border="0" /></a>
+      </td>
+    </tr>
+</table>
 
 ### 🎥 YouTube Playlists:
 * ▶ [ Java 8 Features ](https://www.youtube.com/playlist?list=PL0NAuwT3sREIpmVKgApk2vauQ4zWAenen)
 * ▶ [ Core Java ](https://www.youtube.com/playlist?list=PL0NAuwT3sREK2RpKdYhCM-7J9hoaPr9oY)
 * ▶ [ Java Interview Preparation ](https://www.youtube.com/playlist?list=PL0NAuwT3sRELG-VTgkp9qMelukbqMxuQK)
-* ▶ [ Kotlin Essentials ](https://www.youtube.com/watch?list=PL0NAuwT3sREJIquQlohcGhwfQJ7QhtEeb)
+* ▶ [ Kotlin Essentials ](https://www.youtube.com/playlist?list=PL0NAuwT3sREJIquQlohcGhwfQJ7QhtEeb)
+* ▶ [ Environment Setups ](https://www.youtube.com/playlist?list=PL0NAuwT3sREKiFWTFPxuV7Wib-EOvE4y1)
 
 
 ### GitHub Projects:
 Links to other GitHub projects are as followed:
 * [ Abstract Classes and Interfaces in Java with examples ](https://github.com/codingwalashree/codingwalashree-abstract-class-interface-demo)
-* [ Jav 8 Features with examples ](https://github.com/codingwalashree/codingwalashree-java8-features)
+* [ Java 8 Features with examples ](https://github.com/codingwalashree/codingwalashree-java8-features)
 * [ Kotlin Essentials with examples ](https://github.com/codingwalashree/kotlin-fundamentals)
 
