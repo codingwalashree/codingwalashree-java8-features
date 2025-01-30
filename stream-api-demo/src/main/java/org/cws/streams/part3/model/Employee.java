@@ -2,6 +2,10 @@ package org.cws.streams.part3.model;
 
 import java.util.List;
 
+/**
+ * @author CodingWalaShree
+ * Employee entity
+ * */
 public class Employee {
     /**
      * Member variables of Employee class

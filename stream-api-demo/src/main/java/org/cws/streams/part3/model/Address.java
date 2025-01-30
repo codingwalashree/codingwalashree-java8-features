@@ -1,5 +1,9 @@
 package org.cws.streams.part3.model;
 
+/**
+ * @author CodingWalaShree
+ * Address entity
+ * */
 public class Address {
     /**
      * Member variables of Address class

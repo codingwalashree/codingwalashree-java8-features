@@ -1,17 +1,15 @@
 package org.cws.streams.part3.model;
 
+/**
+ * @author CodingWalaShree
+ * Department entity
+ * */
 public class Department {
     /**
      * Member variables of Department class
      * */
     private long id;
     private String name;
-
-    /**
-     * Static constants for pre-defined Department objects for the demo
-     * */
-    public static final Department IT = new Department(1, "IT");
-    public static final Department HR = new Department(2, "HR");
 
     /**
      * Parameterized All Arguments Constructor
