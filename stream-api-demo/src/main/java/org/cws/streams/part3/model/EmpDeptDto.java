@@ -23,6 +23,15 @@ public class EmpDeptDto {
         this.city = city;
     }
 
+    public EmpDeptDto(Employee employee) {
+        this.empId = employee.getId();
+        this.empName = employee.getName();
+        this.deptName = employee.getDepartment().getName();
+        this.skills = employee.getSkills();
+        this.salary = employee.getSalary();
+        this.city = employee.getAddress().getCity();
+    }
+
     public long getEmpId() {
         return empId;
     }
@@ -69,5 +78,18 @@ public class EmpDeptDto {
 
     public void setCity(String city) {
         this.city = city;
+    }
+
+    @Override
+    public String toString() {
+        final StringBuffer sb = new StringBuffer("EmpDeptDto{");
+        sb.append("empId=").append(empId);
+        sb.append(", empName='").append(empName).append('\'');
+        sb.append(", deptName='").append(deptName).append('\'');
+        sb.append(", skills=").append(skills);
+        sb.append(", salary=").append(salary);
+        sb.append(", city='").append(city).append('\'');
+        sb.append('}');
+        return sb.toString();
     }
 }
