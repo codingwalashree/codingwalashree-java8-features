@@ -54,6 +54,11 @@ Find out answers to the questions like:
            " target="_blank"><img src="http://img.youtube.com/vi/THQ1TApfuhg/0.jpg"
            alt="9 Ways to Create Streams in Java 8 - Everything you need to know - PART 2" width="200" height="150" border="0" /></a>
       </td>
+      <td style="border:none !important;">
+         <a href="http://www.youtube.com/watch?feature=player_embedded&v=bX7Jiboa_Bs
+           " target="_blank"><img src="http://img.youtube.com/vi/bX7Jiboa_Bs/0.jpg"
+           alt="Master Java Streams: filter(), map(), and flatMap() with Real-Project Examples! - PART 3" width="200" height="150" border="0" /></a>
+      </td>
    </tr>
 </table>
 
