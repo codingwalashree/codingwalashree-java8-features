@@ -2,11 +2,30 @@
 
 This source code has been created to demonstrate important Java 8 features by CodingWalaShree.
 
-Follow my 🔴 YouTube channel [Coding Wala Shree](https://www.youtube.com/@CodingwalaShree) for more videos on Java, Kotlin and software architecture concepts.
-
-#CodingWalaShree #Java #Java8 #Java8Features #Kotlin #LearnProgramming
-
 ### Videos on [Coding Wala Shree](https://www.youtube.com/@CodingwalaShree)
+
+***
+
+#### ▶️ Java vs Kotlin:
+
+Find out answers to the questions like:
+- Java Developer's Job at Risk? Learn Kotlin?
+- How Kotlin is gaining popularity in Android development.
+- Whether Kotlin can replace Java in the long run.
+- Java’s evolving features to stay relevant in modern development.
+- Key factors like code readability, performance, and community support.
+
+<table>
+   <tr style="border:none !important;">
+      <td style="border:none !important;">
+         <a href="https://www.youtube.com/watch?v=dp_KyRtzAzw
+           " target="_blank"><img src="http://img.youtube.com/vi/dp_KyRtzAzw/0.jpg"
+           alt="Java Developer's Job at Risk? Learn Kotlin?" width="200" height="150" border="0" /></a>
+      </td>
+    </tr>
+</table>
+
+***
 
 #### ▶️ Optional Class:
 <table>
@@ -18,6 +37,8 @@ Follow my 🔴 YouTube channel [Coding Wala Shree](https://www.youtube.com/@Codi
       </td>
    </tr>
 </table>
+
+***
 
 #### ▶️ Stream APIs:
 
@@ -33,8 +54,15 @@ Follow my 🔴 YouTube channel [Coding Wala Shree](https://www.youtube.com/@Codi
            " target="_blank"><img src="http://img.youtube.com/vi/THQ1TApfuhg/0.jpg"
            alt="9 Ways to Create Streams in Java 8 - Everything you need to know - PART 2" width="200" height="150" border="0" /></a>
       </td>
+      <td style="border:none !important;">
+         <a href="http://www.youtube.com/watch?feature=player_embedded&v=bX7Jiboa_Bs
+           " target="_blank"><img src="http://img.youtube.com/vi/bX7Jiboa_Bs/0.jpg"
+           alt="Master Java Streams: filter(), map(), and flatMap() with Real-Project Examples! - PART 3" width="200" height="150" border="0" /></a>
+      </td>
    </tr>
 </table>
+
+***
 
 #### ▶️ Default and Static Interface Methods:
 
@@ -58,6 +86,8 @@ Follow my 🔴 YouTube channel [Coding Wala Shree](https://www.youtube.com/@Codi
    </tr>
 </table>
 
+***
+
 #### ▶️ Lambda Expressions and Functional Interfaces:
 
 <table>
@@ -79,6 +109,8 @@ Follow my 🔴 YouTube channel [Coding Wala Shree](https://www.youtube.com/@Codi
       </td>
    </tr>
 </table>
+
+***
 
 #### ▶️ Core Java:
 
@@ -107,26 +139,7 @@ Follow my 🔴 YouTube channel [Coding Wala Shree](https://www.youtube.com/@Codi
    </tr>
 </table>
 
-
-#### ▶️ Java vs Kotlin:
-
-Find out answers to the questions like:
-- Java Developer's Job at Risk? Learn Kotlin?
-- How Kotlin is gaining popularity in Android development.
-- Whether Kotlin can replace Java in the long run.
-- Java’s evolving features to stay relevant in modern development.
-- Key factors like code readability, performance, and community support.
-
-
-<table>
-   <tr style="border:none !important;">
-      <td style="border:none !important;">
-         <a href="https://www.youtube.com/watch?v=dp_KyRtzAzw
-           " target="_blank"><img src="http://img.youtube.com/vi/dp_KyRtzAzw/0.jpg"
-           alt="Java Developer's Job at Risk? Learn Kotlin?" width="200" height="150" border="0" /></a>
-      </td>
-    </tr>
-</table>
+***
 
 #### ▶️ Environment Setups
 
@@ -145,7 +158,9 @@ Find out answers to the questions like:
     </tr>
 </table>
 
+
 ### 🎥 YouTube Playlists:
+***
 * ▶ [ Java 8 Features ](https://www.youtube.com/playlist?list=PL0NAuwT3sREIpmVKgApk2vauQ4zWAenen)
 * ▶ [ Core Java ](https://www.youtube.com/playlist?list=PL0NAuwT3sREK2RpKdYhCM-7J9hoaPr9oY)
 * ▶ [ Java Interview Preparation ](https://www.youtube.com/playlist?list=PL0NAuwT3sRELG-VTgkp9qMelukbqMxuQK)
@@ -154,8 +169,13 @@ Find out answers to the questions like:
 
 
 ### GitHub Projects:
+***
 Links to other GitHub projects are as followed:
 * [ Abstract Classes and Interfaces in Java with examples ](https://github.com/codingwalashree/codingwalashree-abstract-class-interface-demo)
 * [ Java 8 Features with examples ](https://github.com/codingwalashree/codingwalashree-java8-features)
 * [ Kotlin Essentials with examples ](https://github.com/codingwalashree/kotlin-fundamentals)
 
+***
+Follow my 🔴 YouTube channel [Coding Wala Shree](https://www.youtube.com/@CodingwalaShree) for more videos on Java, Kotlin and software architecture concepts.
+
+#CodingWalaShree #Java #Java8 #Java8Features #Kotlin #LearnProgramming

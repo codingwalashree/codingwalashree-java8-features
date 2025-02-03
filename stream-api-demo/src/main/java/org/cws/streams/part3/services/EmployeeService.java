@@ -5,6 +5,7 @@ import org.cws.streams.part3.model.Employee;
 import org.cws.streams.part3.repositories.EmployeeRepository;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * @author CodingWalaShree
@@ -19,17 +20,15 @@ public class EmployeeService {
      * Stream Methods: filter, collect
      * */
     public List<Employee> getEmployeesByNameContains(String text) {
-        // TODO: Yet to be implemented
-        return null;
+        return employeeRepository.findByNameContains(text);
     }
 
     /**
      * Get list of employees living in given @param city
      * Stream Methods: filter, collect
      * */
-    public List<Employee> findByCity(String city) {
-        // TODO: Yet to be implemented
-        return null;
+    public List<Employee> getByCity(String city) {
+        return employeeRepository.findByCity(city);
     }
 
     /**
@@ -37,8 +36,11 @@ public class EmployeeService {
      * Stream Methods: filter, map, collect
      * */
     public List<EmpDeptDto> getEmployeesHavingSkill(String skill) {
-        // TODO: Yet to be implemented
-        return null;
+        return employeeRepository.findBySkill(skill)
+                .stream()
+                //.map(e -> new EmpDeptDto(e))
+                .map(EmpDeptDto::new)
+                .collect(Collectors.toList());
     }
 
     /**
@@ -47,8 +49,10 @@ public class EmployeeService {
      * Stream Methods: filter, map, collect
      * */
     public List<EmpDeptDto> getHighlyPaidEmployees(long deptId, double minSalary) {
-        // TODO: Yet to be implemented
-        return null;
+        return employeeRepository.findByDepartmentIdAndSalaryGreaterThan(deptId, minSalary)
+                .stream()
+                .map(EmpDeptDto::new)
+                .collect(Collectors.toList());
     }
 
     /**
@@ -60,4 +64,15 @@ public class EmployeeService {
         return 0.0;
     }
 
+    /**
+     * Get skills capacity for given department
+     * Stream Methods: filter, flatMap
+     * */
+    public List<String> getSkillsByDeptId(long deptId) {
+        return employeeRepository.findSkillsByDeptId(deptId)
+                .stream()
+                .flatMap(e -> e.getSkills().stream())
+                .distinct()
+                .collect(Collectors.toList());
+    }
 }

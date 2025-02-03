@@ -2,6 +2,7 @@ package org.cws.streams.part3.repositories;
 
 import org.cws.streams.part3.model.Employee;
 import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * @author CodingWalaShree
@@ -16,8 +17,10 @@ public class EmployeeRepository {
      * Output: 5 employees with name containing "a"
      * */
     public List<Employee> findByNameContains(String text) {
-        // TODO: Yet to be implemented
-        return null;
+        return DatabaseProxy.getEmployees()
+                .stream()
+                .filter(e -> e.getName().contains(text))
+                .collect(Collectors.toList());
     }
 
     /**
@@ -25,8 +28,10 @@ public class EmployeeRepository {
      * Stream Methods: filter, collect
      * */
     public List<Employee> findByCity(String city) {
-        // TODO: Yet to be implemented
-        return null;
+        return DatabaseProxy.getEmployees()
+                .stream()
+                .filter(e -> e.getAddress().getCity().equals(city))
+                .collect(Collectors.toList());
     }
 
     /**
@@ -35,17 +40,21 @@ public class EmployeeRepository {
      * Stream Methods: filter, collect
      * */
     public List<Employee> findByDepartmentIdAndSalaryGreaterThan(long deptId, double minSalary) {
-        // TODO: Yet to be implemented
-        return null;
+        return DatabaseProxy.getEmployees()
+                .stream()
+                .filter(e -> e.getDepartment().getId() == deptId && e.getSalary() > minSalary)
+                .collect(Collectors.toList());
     }
 
     /**
      * Get list of skills of an employee with given employee id
      * Stream Methods: filter, map, collect
      * */
-    public List<String> findSkillsByEmpId(long empId) {
-        // TODO: Yet to be implemented
-        return null;
+    public List<Employee> findSkillsByDeptId(long deptId) {
+        return DatabaseProxy.getEmployees()
+                .stream()
+                .filter(e -> e.getDepartment().getId() == deptId)
+                .collect(Collectors.toList());
     }
 
     /**
@@ -53,8 +62,10 @@ public class EmployeeRepository {
      * Stream Methods: filter, collect
      * */
     public List<Employee> findBySkill(String skill) {
-        // TODO: Yet to be implemented
-        return null;
+        return DatabaseProxy.getEmployees()
+                .stream()
+                .filter(e -> e.getSkills().contains(skill))
+                .collect(Collectors.toList());
     }
 
     /**
@@ -64,18 +75,6 @@ public class EmployeeRepository {
     public double calculateAverageSalary(long deptId) {
         // TODO: Yet to be implemented
         return 0.0;
-    }
-
-    /**
-     * Get list of skills in a given department
-     * Stream Methods: filter, flatMap, collect
-     * Example:
-     * Input: deptId = 2 (HR)
-     * Output: "Recruitment", "Screening", "Onboarding", "People Management"
-     * */
-    public List<String> findSkillsByDeptId(long deptId) {
-        // TODO: Yet to be implemented
-        return null;
     }
 
 }

@@ -20,6 +20,7 @@ public class DatabaseProxy {
     private static final List<Employee> employees = new ArrayList<>();
 
     /**
+     * Belongs to DatabaseProxy class.
      * Static constants for pre-defined Department objects for the demo
      */
     public static final Department IT = new Department(1, "IT");
