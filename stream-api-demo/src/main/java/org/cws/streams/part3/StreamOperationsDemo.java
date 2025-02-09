@@ -13,7 +13,16 @@ public class StreamOperationsDemo {
     private static EmployeeService employeeService = new EmployeeService();
 
     public static void main(String[] args) {
-        // TODO: Create a service and access methods demonstrating stream apis
+        // filterMapFlatMapDemo();
+        sortedDemo();
+
+    }
+
+    public static void sortedDemo() {
+        System.out.println("------------------------------");
+    }
+
+    public static void filterMapFlatMapDemo() {
         System.out.println("Getting employees containing 'ee' in their name");
         employeeService.getEmployeesByNameContains("ee")
                 .stream()

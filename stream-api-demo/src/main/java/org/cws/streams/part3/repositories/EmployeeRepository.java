@@ -69,12 +69,30 @@ public class EmployeeRepository {
     }
 
     /**
-     * Calculate average salary for all employees in given department
-     * Stream Methods: filter, mapToDouble, average
+     * Sort all employees in by their employee IDs in descending fashion.
+     * Stream Methods: sorted, collect
      * */
-    public double calculateAverageSalary(long deptId) {
+    public List<Employee> sortById() {
         // TODO: Yet to be implemented
-        return 0.0;
+        return null;
+    }
+
+    /**
+     * Sort all employees by experience in years in ascending fashion.
+     * Stream Methods: sorted, collect
+     * */
+    public List<Employee> sortByExperience() {
+        // TODO: Yet to be implemented
+        return null;
+    }
+
+    /**
+     * Sort all employees by skill count and experience
+     * Stream Methods: filter, sort, collect
+     * */
+    public List<Employee> sortByExperienceAndSkillCount() {
+        // TODO: Yet to be implemented
+        return null;
     }
 
 }
