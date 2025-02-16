@@ -81,8 +81,7 @@ public class EmployeeService {
      * Stream Methods: sorted, collect
      * */
     public List<Employee> sortById() {
-        // TODO: Yet to be implemented
-        return null;
+        return employeeRepository.sortById();
     }
 
     /**
@@ -90,8 +89,11 @@ public class EmployeeService {
      * Stream Methods: sorted(Comparator), collect
      * */
     public List<Employee> sortByExperience() {
-        // TODO: Yet to be implemented
-        return null;
+        return employeeRepository.sortByExperience();
+    }
+
+    public List<Employee> sortByExperienceDescending() {
+        return employeeRepository.sortByExperienceDescending();
     }
 
     /**

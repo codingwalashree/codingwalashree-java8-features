@@ -32,8 +32,8 @@ public class DatabaseProxy {
         departments.add(IT);
         departments.add(HR);
 
-        employees.add(new Employee(1, "Rajesh", Address.inMumbai("address1"), javaDeveloperSkills(), IT, 80000.0, 3.3));
-        employees.add(new Employee(2, "Shiven", Address.inPune("address2"), javaFullstackReactSkills(), IT, 90000.0, 5.2));
+        employees.add(new Employee(1, "Rajesh", Address.inMumbai("address1"), javaDeveloperSkills(), IT, 80000.0, 3));
+        employees.add(new Employee(2, "Shiven", Address.inPune("address2"), javaFullstackReactSkills(), IT, 90000.0, 3));
         employees.add(new Employee(3, "Preeti", Address.inMumbai("address3"), Arrays.asList("React", "Angular", "NodeJS"), IT, 65000.0, 2.0));
         employees.add(new Employee(4, "Avani", Address.inMumbai("address4"), javaFullstackAngularSkills(), IT, 75000.0, 4.5));
         employees.add(new Employee(5, "Santosh", Address.inPune("address5"), coreHrSkills(), HR, 55000.0, 5.0));

@@ -1,6 +1,8 @@
 package org.cws.streams.part3.repositories;
 
 import org.cws.streams.part3.model.Employee;
+
+import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -73,8 +75,10 @@ public class EmployeeRepository {
      * Stream Methods: sorted, collect
      * */
     public List<Employee> sortById() {
-        // TODO: Yet to be implemented
-        return null;
+        return DatabaseProxy.getEmployees()
+                .stream()
+                .sorted()
+                .collect(Collectors.toList());
     }
 
     /**
@@ -82,8 +86,24 @@ public class EmployeeRepository {
      * Stream Methods: sorted, collect
      * */
     public List<Employee> sortByExperience() {
-        // TODO: Yet to be implemented
-        return null;
+        return DatabaseProxy.getEmployees()
+                .stream()
+                .sorted(Comparator.comparing(Employee::getExperienceInYears))
+                .collect(Collectors.toList());
+    }
+
+    /**
+     * Sort all employees by experience in years in descending fashion.
+     * Stream Methods: sorted, collect
+     * */
+    public List<Employee> sortByExperienceDescending() {
+        return DatabaseProxy.getEmployees()
+                .stream()
+                .sorted(
+                        Comparator.comparingDouble(Employee::getExperienceInYears)
+                                .reversed()
+                )
+                .collect(Collectors.toList());
     }
 
     /**
@@ -91,8 +111,14 @@ public class EmployeeRepository {
      * Stream Methods: filter, sort, collect
      * */
     public List<Employee> sortByExperienceAndSkillCount() {
-        // TODO: Yet to be implemented
-        return null;
+        return DatabaseProxy.getEmployees()
+                .stream()
+                .sorted(Comparator
+                        .comparingDouble(Employee::getExperienceInYears)
+                        .thenComparing((Employee e) -> e.getSkills().size())
+                        .reversed()
+                )
+                .collect(Collectors.toList());
     }
 
 }
