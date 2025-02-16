@@ -6,7 +6,7 @@ import java.util.List;
  * @author CodingWalaShree
  * Employee entity
  * */
-public class Employee {
+public class Employee implements Comparable<Employee> {
     /**
      * Member variables of Employee class
      * */
@@ -100,5 +100,10 @@ public class Employee {
         sb.append(", experienceInYears=").append(experienceInYears);
         sb.append('}');
         return sb.toString();
+    }
+
+    @Override
+    public int compareTo(Employee other) {
+        return Long.compare(this.getId(), other.getId());
     }
 }

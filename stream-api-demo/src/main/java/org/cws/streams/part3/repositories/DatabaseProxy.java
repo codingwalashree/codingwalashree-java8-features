@@ -19,6 +19,8 @@ public class DatabaseProxy {
      */
     private static final List<Employee> employees = new ArrayList<>();
 
+    private static final List<Department> departments = new ArrayList<>();
+
     /**
      * Belongs to DatabaseProxy class.
      * Static constants for pre-defined Department objects for the demo
@@ -27,8 +29,11 @@ public class DatabaseProxy {
     public static final Department HR = new Department(2, "HR");
 
     static {
-        employees.add(new Employee(1, "Rajesh", Address.inMumbai("address1"), javaDeveloperSkills(), IT, 80000.0, 3.3));
-        employees.add(new Employee(2, "Shiven", Address.inPune("address2"), javaFullstackReactSkills(), IT, 90000.0, 5.2));
+        departments.add(IT);
+        departments.add(HR);
+
+        employees.add(new Employee(1, "Rajesh", Address.inMumbai("address1"), javaDeveloperSkills(), IT, 80000.0, 3));
+        employees.add(new Employee(2, "Shiven", Address.inPune("address2"), javaFullstackReactSkills(), IT, 90000.0, 3));
         employees.add(new Employee(3, "Preeti", Address.inMumbai("address3"), Arrays.asList("React", "Angular", "NodeJS"), IT, 65000.0, 2.0));
         employees.add(new Employee(4, "Avani", Address.inMumbai("address4"), javaFullstackAngularSkills(), IT, 75000.0, 4.5));
         employees.add(new Employee(5, "Santosh", Address.inPune("address5"), coreHrSkills(), HR, 55000.0, 5.0));
@@ -39,6 +44,10 @@ public class DatabaseProxy {
         employees.add(new Employee(10, "Vivansh", Address.inMumbai("address10"), javaFullstackReactSkills(), IT, 150000.0, 11));
         employees.add(new Employee(11, "Riya", Address.inPune("address11"), javaDeveloperSkills(), IT, 880000.0, 4));
         employees.add(new Employee(12, "Atharva", Address.inPune("address12"), javaFullstackAngularSkills(), IT, 118000.0, 12));
+    }
+
+    public static List<Department> getDepartments() {
+        return departments;
     }
 
     public static List<Employee> getEmployees() {

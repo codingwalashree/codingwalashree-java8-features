@@ -59,6 +59,11 @@ Find out answers to the questions like:
            " target="_blank"><img src="http://img.youtube.com/vi/bX7Jiboa_Bs/0.jpg"
            alt="Master Java Streams: filter(), map(), and flatMap() with Real-Project Examples! - PART 3" width="200" height="150" border="0" /></a>
       </td>
+      <td style="border:none !important;">
+         <a href="http://www.youtube.com/watch?feature=player_embedded&v=kmz2DhPSGiA
+           " target="_blank"><img src="http://img.youtube.com/vi/kmz2DhPSGiA/0.jpg"
+           alt="🚀 Java Streams Sorting Like a Pro! 🔥 sorted() with Comparable & Comparator | PART 4" width="200" height="150" border="0" /></a>
+      </td>
    </tr>
 </table>
 

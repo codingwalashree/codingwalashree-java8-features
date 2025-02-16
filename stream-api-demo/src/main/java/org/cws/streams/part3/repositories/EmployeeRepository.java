@@ -1,6 +1,8 @@
 package org.cws.streams.part3.repositories;
 
 import org.cws.streams.part3.model.Employee;
+
+import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -69,12 +71,54 @@ public class EmployeeRepository {
     }
 
     /**
-     * Calculate average salary for all employees in given department
-     * Stream Methods: filter, mapToDouble, average
+     * Sort all employees in by their employee IDs in descending fashion.
+     * Stream Methods: sorted, collect
      * */
-    public double calculateAverageSalary(long deptId) {
-        // TODO: Yet to be implemented
-        return 0.0;
+    public List<Employee> sortById() {
+        return DatabaseProxy.getEmployees()
+                .stream()
+                .sorted()
+                .collect(Collectors.toList());
+    }
+
+    /**
+     * Sort all employees by experience in years in ascending fashion.
+     * Stream Methods: sorted, collect
+     * */
+    public List<Employee> sortByExperience() {
+        return DatabaseProxy.getEmployees()
+                .stream()
+                .sorted(Comparator.comparing(Employee::getExperienceInYears))
+                .collect(Collectors.toList());
+    }
+
+    /**
+     * Sort all employees by experience in years in descending fashion.
+     * Stream Methods: sorted, collect
+     * */
+    public List<Employee> sortByExperienceDescending() {
+        return DatabaseProxy.getEmployees()
+                .stream()
+                .sorted(
+                        Comparator.comparingDouble(Employee::getExperienceInYears)
+                                .reversed()
+                )
+                .collect(Collectors.toList());
+    }
+
+    /**
+     * Sort all employees by skill count and experience
+     * Stream Methods: filter, sort, collect
+     * */
+    public List<Employee> sortByExperienceAndSkillCount() {
+        return DatabaseProxy.getEmployees()
+                .stream()
+                .sorted(Comparator
+                        .comparingDouble(Employee::getExperienceInYears)
+                        .thenComparing((Employee e) -> e.getSkills().size())
+                        .reversed()
+                )
+                .collect(Collectors.toList());
     }
 
 }

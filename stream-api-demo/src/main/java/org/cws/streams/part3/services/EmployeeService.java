@@ -75,4 +75,33 @@ public class EmployeeService {
                 .distinct()
                 .collect(Collectors.toList());
     }
+
+    /**
+     * Sort all employees in by their employee IDs in descending fashion.
+     * Stream Methods: sorted, collect
+     * */
+    public List<Employee> sortById() {
+        return employeeRepository.sortById();
+    }
+
+    /**
+     * Sort all employees by experience in years in ascending fashion.
+     * Stream Methods: sorted(Comparator), collect
+     * */
+    public List<Employee> sortByExperience() {
+        return employeeRepository.sortByExperience();
+    }
+
+    public List<Employee> sortByExperienceDescending() {
+        return employeeRepository.sortByExperienceDescending();
+    }
+
+    /**
+     * Sort all employees by skill count and experience
+     * Stream Methods: sorted(Comparator), collect
+     * */
+    public List<Employee> sortByExperienceAndSkillCount() {
+        // TODO: Yet to be implemented
+        return employeeRepository.sortByExperienceAndSkillCount();
+    }
 }

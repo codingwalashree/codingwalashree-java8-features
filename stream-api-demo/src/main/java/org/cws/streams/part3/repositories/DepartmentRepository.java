@@ -12,6 +12,15 @@ import java.util.Map;
  * */
 public class DepartmentRepository {
     /**
+     * Sort departments by department ID.
+     * Stream Methods: sorted, collect
+     * */
+    public List<Department> sortById() {
+        // TODO: Yet to be implemented
+        return null;
+    }
+
+    /**
      * Given a department ID, returns total salary required to be paid to all employees in the given department.
      * Stream Methods: filter, mapToDouble, reduce, sum
      * */
@@ -44,11 +53,4 @@ public class DepartmentRepository {
         // TODO: Yet to be implemented
         return null;
     }
-
-//    /**
-//     * Utility method to create identity or dummy employee
-//     * */
-//    public static Employee employeeIdentity() {
-//        return new Employee(0, "", Address.inMumbai(""), Collections.singletonList(""), new Department(0, ""), 0, 0);
-//    }
 }
