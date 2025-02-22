@@ -1,8 +1,8 @@
-package org.cws.streams.part3.repositories;
+package org.cws.streams.domain.repositories;
 
-import org.cws.streams.part3.model.Address;
-import org.cws.streams.part3.model.Department;
-import org.cws.streams.part3.model.Employee;
+import org.cws.streams.domain.model.Address;
+import org.cws.streams.domain.model.Department;
+import org.cws.streams.domain.model.Employee;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -27,6 +27,7 @@ public class DatabaseProxy {
      */
     public static final Department IT = new Department(1, "IT");
     public static final Department HR = new Department(2, "HR");
+    public static final Department FINANCE = new Department(3, "Finance");
 
     static {
         departments.add(IT);
@@ -44,6 +45,9 @@ public class DatabaseProxy {
         employees.add(new Employee(10, "Vivansh", Address.inMumbai("address10"), javaFullstackReactSkills(), IT, 150000.0, 11));
         employees.add(new Employee(11, "Riya", Address.inPune("address11"), javaDeveloperSkills(), IT, 880000.0, 4));
         employees.add(new Employee(12, "Atharva", Address.inPune("address12"), javaFullstackAngularSkills(), IT, 118000.0, 12));
+        employees.add(new Employee(13, "Preeti", Address.inPune("address13"), Arrays.asList("Accounting", "Taxation and Compliance", "Risk Management"), FINANCE, 75000.0, 10));
+        employees.add(new Employee(14, "Santosh", Address.inMumbai("address14"), Arrays.asList("Accounting", "Risk Management"), FINANCE, 58000.0, 8));
+        employees.add(new Employee(15, "Jitesh", Address.inMumbai("address15"), Arrays.asList("Accounting"), FINANCE, 20000.0, 1.5));
     }
 
     public static List<Department> getDepartments() {

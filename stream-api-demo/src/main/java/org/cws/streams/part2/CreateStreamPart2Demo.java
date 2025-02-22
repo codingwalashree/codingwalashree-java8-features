@@ -1,4 +1,4 @@
-package org.cws.streams;
+package org.cws.streams.part2;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -12,7 +12,7 @@ import java.util.stream.DoubleStream;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
-public class CreateStreamDemo {
+public class CreateStreamPart2Demo {
     public static void main(String[] args) {
         createEmptyStream();
         createStreamFromArray();
@@ -142,7 +142,7 @@ public class CreateStreamDemo {
         Path path = Paths.get(filePath);
         try (Stream<String> lines = Files.lines(path)) {
                 lines
-                    .mapToLong(CreateStreamDemo::tryParseLong)
+                    .mapToLong(CreateStreamPart2Demo::tryParseLong)
                     .forEach(System.out::println);
         } catch (IOException | NumberFormatException e) {
             System.out.println("Something went wrong: " + e.getMessage());

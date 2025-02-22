@@ -1,4 +1,4 @@
-package org.cws.streams.part3.model;
+package org.cws.streams.domain.model;
 
 import java.util.List;
 
