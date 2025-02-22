@@ -1,6 +1,6 @@
-package org.cws.streams.part3.repositories;
+package org.cws.streams.domain.repositories;
 
-import org.cws.streams.part3.model.Employee;
+import org.cws.streams.domain.model.Employee;
 
 import java.util.Comparator;
 import java.util.List;
@@ -108,7 +108,7 @@ public class EmployeeRepository {
 
     /**
      * Sort all employees by skill count and experience
-     * Stream Methods: filter, sort, collect
+     * Stream Methods: sorted, collect
      * */
     public List<Employee> sortByExperienceAndSkillCount() {
         return DatabaseProxy.getEmployees()
@@ -121,4 +121,46 @@ public class EmployeeRepository {
                 .collect(Collectors.toList());
     }
 
+    /**
+     * --- limit() method demo ---
+     * Get top 3 highest paid employees
+     * Steps:
+     *      Sort the result by salary in descending fashion - sorted
+     *      Log employees if sorted as expected - peek
+     *      Restrict top 3 employees - limit
+     * Stream Methods: peek, filter, sorted, collect
+     * */
+    public List<Employee> findTop3BySalary() {
+        // TODO: Complete the implementation
+        return null;
+    }
+
+    /**
+     * --- skip() method demo ---
+     * Skip top 3 highest paid employees and get the remaining employees
+     * Steps:
+     *      Sort the result by salary in descending fashion - sorted
+     *      Log employees if sorted as expected - peek
+     *      Restrict top 3 employees - skip
+     * Stream Methods: peek, filter, sorted, skip, collect
+     * */
+    public List<Employee> skipTop3BySalary() {
+        // TODO: Complete the implementation
+        return null;
+    }
+
+    /**
+     * --- skip() and limit() method demo ---
+     * The company has already shortlisted the top 3 highest-paid employees.
+     * Now, we need to fetch the next 2 highest-paid employees for further evaluation.
+     *      Sort the result by salary in descending fashion - sorted
+     *      Log employees if sorted as expected - peek
+     *      Skip top 3 employees - skip
+     *      Restrict top 2 employees - limit
+     * Stream Methods: peek, filter, sorted, skip, collect
+     * */
+    public List<Employee> findNextTop3Employees() {
+        // TODO: Complete the implementation
+        return null;
+    }
 }

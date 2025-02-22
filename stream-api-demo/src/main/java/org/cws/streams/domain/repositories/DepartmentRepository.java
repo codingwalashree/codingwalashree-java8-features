@@ -1,7 +1,7 @@
-package org.cws.streams.part3.repositories;
+package org.cws.streams.domain.repositories;
 
-import org.cws.streams.part3.model.Department;
-import org.cws.streams.part3.model.Employee;
+import org.cws.streams.domain.model.Department;
+import org.cws.streams.domain.model.Employee;
 import java.util.DoubleSummaryStatistics;
 import java.util.List;
 import java.util.Map;
@@ -12,10 +12,11 @@ import java.util.Map;
  * */
 public class DepartmentRepository {
     /**
-     * Sort departments by department ID.
-     * Stream Methods: sorted, collect
+     * --- distinct() and peek() method demo ---
+     * Get distinct departments for employees having experience less than given experience.
+     * Stream Methods: filter, distinct, peek, collect
      * */
-    public List<Department> sortById() {
+    public List<Employee> findByExperienceLessThan(double exp) {
         // TODO: Yet to be implemented
         return null;
     }
