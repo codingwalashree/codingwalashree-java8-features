@@ -121,6 +121,13 @@ public class EmployeeRepository {
                 .collect(Collectors.toList());
     }
 
+    public List<Employee> findByExperienceLessThan(double experience) {
+        return DatabaseProxy.getEmployees()
+                .stream()
+                .filter(e -> e.getExperienceInYears() < experience)
+                .collect(Collectors.toList());
+    }
+
     /**
      * --- limit() method demo ---
      * Get top 3 highest paid employees
@@ -131,8 +138,11 @@ public class EmployeeRepository {
      * Stream Methods: peek, filter, sorted, collect
      * */
     public List<Employee> findTop3BySalary() {
-        // TODO: Complete the implementation
-        return null;
+        return DatabaseProxy.getEmployees()
+                .stream()
+                .sorted(Comparator.comparingDouble((Employee e) -> e.getSalary()).reversed())
+                .limit(3)
+                .collect(Collectors.toList());
     }
 
     /**
@@ -145,8 +155,11 @@ public class EmployeeRepository {
      * Stream Methods: peek, filter, sorted, skip, collect
      * */
     public List<Employee> skipTop3BySalary() {
-        // TODO: Complete the implementation
-        return null;
+        return DatabaseProxy.getEmployees()
+                .stream()
+                .sorted(Comparator.comparingDouble(Employee::getSalary).reversed())
+                .skip(3)
+                .collect(Collectors.toList());
     }
 
     /**
@@ -160,7 +173,11 @@ public class EmployeeRepository {
      * Stream Methods: peek, filter, sorted, skip, collect
      * */
     public List<Employee> findNextTop3Employees() {
-        // TODO: Complete the implementation
-        return null;
+        return DatabaseProxy.getEmployees()
+                .stream()
+                .sorted(Comparator.comparingDouble(Employee::getSalary).reversed())
+                .skip(3)
+                .limit(2)
+                .collect(Collectors.toList());
     }
 }

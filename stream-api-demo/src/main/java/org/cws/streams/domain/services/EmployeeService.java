@@ -55,6 +55,10 @@ public class EmployeeService {
                 .collect(Collectors.toList());
     }
 
+    public List<Employee> getEmployeesWithExperienceLessThan(double experience) {
+        return employeeRepository.findByExperienceLessThan(experience);
+    }
+
     /**
      * Calculate average salary for all employees in given department
      * Stream Methods: filter, mapToDouble, average
@@ -114,8 +118,7 @@ public class EmployeeService {
      * Stream Methods: peek, filter, sorted, collect
      * */
     public List<Employee> getTop3HighestPaidEmployees() {
-        // TODO: Complete the implementation
-        return null;
+        return employeeRepository.findTop3BySalary();
     }
 
     /**
@@ -128,8 +131,7 @@ public class EmployeeService {
      * Stream Methods: peek, filter, sorted, skip, collect
      * */
     public List<Employee> getAllExceptTop3HighestPaidEmployees() {
-        // TODO: Complete the implementation
-        return null;
+        return employeeRepository.skipTop3BySalary();
     }
 
     /**
@@ -143,7 +145,6 @@ public class EmployeeService {
      * Stream Methods: peek, filter, sorted, skip, collect
      * */
     public List<Employee> getNextTop3Employees() {
-        // TODO: Complete the implementation
-        return null;
+        return employeeRepository.findNextTop3Employees();
     }
 }
