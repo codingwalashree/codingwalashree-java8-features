@@ -6,27 +6,6 @@ This source code has been created to demonstrate important Java 8 features by Co
 
 ***
 
-#### ▶️ Java vs Kotlin:
-
-Find out answers to the questions like:
-- Java Developer's Job at Risk? Learn Kotlin?
-- How Kotlin is gaining popularity in Android development.
-- Whether Kotlin can replace Java in the long run.
-- Java’s evolving features to stay relevant in modern development.
-- Key factors like code readability, performance, and community support.
-
-<table>
-   <tr style="border:none !important;">
-      <td style="border:none !important;">
-         <a href="https://www.youtube.com/watch?v=dp_KyRtzAzw
-           " target="_blank"><img src="http://img.youtube.com/vi/dp_KyRtzAzw/0.jpg"
-           alt="Java Developer's Job at Risk? Learn Kotlin?" width="200" height="150" border="0" /></a>
-      </td>
-    </tr>
-</table>
-
-***
-
 #### ▶️ Optional Class:
 <table>
    <tr style="border:none !important;">
@@ -59,10 +38,17 @@ Find out answers to the questions like:
            " target="_blank"><img src="http://img.youtube.com/vi/bX7Jiboa_Bs/0.jpg"
            alt="Master Java Streams: filter(), map(), and flatMap() with Real-Project Examples! - PART 3" width="200" height="150" border="0" /></a>
       </td>
+   </tr>
+   <tr style="border:none !important;">
       <td style="border:none !important;">
          <a href="http://www.youtube.com/watch?feature=player_embedded&v=kmz2DhPSGiA
            " target="_blank"><img src="http://img.youtube.com/vi/kmz2DhPSGiA/0.jpg"
            alt="🚀 Java Streams Sorting Like a Pro! 🔥 sorted() with Comparable & Comparator | PART 4" width="200" height="150" border="0" /></a>
+      </td>
+      <td style="border:none !important;">
+         <a href="http://www.youtube.com/watch?feature=player_embedded&v=hWY8eINc2yA
+           " target="_blank"><img src="http://img.youtube.com/vi/hWY8eINc2yA/0.jpg"
+           alt="Java Streams: peek(), distinct(), limit(), skip() Explained with Real-World Examples | PART 5" width="200" height="150" border="0" /></a>
       </td>
    </tr>
 </table>
@@ -142,6 +128,27 @@ Find out answers to the questions like:
            alt="JDK vs JRE vs JVM in 3 minutes!" width="200" height="150" border="0" /></a>
       </td>
    </tr>
+</table>
+
+***
+
+#### ▶️ Java vs Kotlin:
+
+Find out answers to the questions like:
+- Java Developer's Job at Risk? Learn Kotlin?
+- How Kotlin is gaining popularity in Android development.
+- Whether Kotlin can replace Java in the long run.
+- Java’s evolving features to stay relevant in modern development.
+- Key factors like code readability, performance, and community support.
+
+<table>
+   <tr style="border:none !important;">
+      <td style="border:none !important;">
+         <a href="https://www.youtube.com/watch?v=dp_KyRtzAzw
+           " target="_blank"><img src="http://img.youtube.com/vi/dp_KyRtzAzw/0.jpg"
+           alt="Java Developer's Job at Risk? Learn Kotlin?" width="200" height="150" border="0" /></a>
+      </td>
+    </tr>
 </table>
 
 ***
