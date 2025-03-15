@@ -4,6 +4,7 @@ import org.cws.streams.domain.model.Employee;
 
 import java.util.Comparator;
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 /**
@@ -11,6 +12,22 @@ import java.util.stream.Collectors;
  * Dummy Repository layer for managing Employees
  * */
 public class EmployeeRepository {
+    /**
+     * Get highest paid employee
+     * */
+    public Optional<Employee> findByHighestSalary() {
+        // TODO: To be implemented
+        return Optional.empty();
+    }
+
+    /**
+     * Get lowest paid employee
+     * */
+    public Optional<Employee> findByLowestSalary() {
+        // TODO: To be implemented
+        return Optional.empty();
+    }
+
     /**
      * Get list of employees whose name contains given @param text
      * Stream Methods: filter, collect
@@ -139,10 +156,10 @@ public class EmployeeRepository {
      * */
     public List<Employee> findTop3BySalary() {
         return DatabaseProxy.getEmployees()
-                .stream()
-                .sorted(Comparator.comparingDouble((Employee e) -> e.getSalary()).reversed())
-                .limit(3)
-                .collect(Collectors.toList());
+            .stream()
+            .sorted(Comparator.comparingDouble(Employee::getSalary).reversed())
+            .limit(3)
+            .collect(Collectors.toList());
     }
 
     /**

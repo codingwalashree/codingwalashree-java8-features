@@ -5,6 +5,7 @@ import org.cws.streams.domain.model.Employee;
 import org.cws.streams.domain.repositories.EmployeeRepository;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 /**
@@ -14,6 +15,22 @@ import java.util.stream.Collectors;
  * */
 public class EmployeeService {
     private EmployeeRepository employeeRepository = new EmployeeRepository();
+
+    /**
+     * Get highest paid employee
+     * */
+    public Optional<Employee> getHighestPaidEmployee() {
+        // TODO: To be implemented
+        return Optional.empty();
+    }
+
+    /**
+     * Get lowest paid employee
+     * */
+    public Optional<Employee> getLowestPaidEmployee() {
+        // TODO: To be implemented
+        return Optional.empty();
+    }
 
     /**
      * Get list of employees whose name contains given @param text
