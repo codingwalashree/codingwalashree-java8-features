@@ -33,6 +33,15 @@ public class EmployeeService {
     }
 
     /**
+     * Get employee count having less than given experience
+     * Use getEmployeesWithExperienceLessThan
+     * */
+    public int countByExperienceLessThan(double experience) {
+        // TODO: To be implemented
+        return 0;
+    }
+
+    /**
      * Get list of employees whose name contains given @param text
      * Stream Methods: filter, collect
      * */

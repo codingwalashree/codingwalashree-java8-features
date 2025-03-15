@@ -28,7 +28,7 @@ public class StreamOperationsPart6Demo {
 
     /** count() -- Returns number of elements in Stream
      * Ex 1. count elements in the stream of Doubles
-     * Ex 2. Get count of employees after filtering the Stream
+     * Ex 2. Get count of employees having more than 5 years experience
      */
     public static void countDemo() {
         System.out.println("count() demo..");
