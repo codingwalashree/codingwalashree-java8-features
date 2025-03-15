@@ -87,7 +87,7 @@ public class StreamOperationsPart5Demo {
     public static void skipDemo() {
         System.out.println("skip() demo..");
 
-        // Ex 1. Limit results from stream of strings
+        // Ex 1. Skip first 3 elements from stream of strings
         List<String> skippedStrings = Stream.of("ABC", "AB", "A", "B", "C")
                 .skip(3)
                 .collect(Collectors.toList());
