@@ -16,16 +16,18 @@ public class EmployeeRepository {
      * Get highest paid employee
      * */
     public Optional<Employee> findByHighestSalary() {
-        // TODO: To be implemented
-        return Optional.empty();
+        return DatabaseProxy.getEmployees()
+                .stream()
+                .max(Comparator.comparingDouble(Employee::getSalary));
     }
 
     /**
      * Get lowest paid employee
      * */
     public Optional<Employee> findByLowestSalary() {
-        // TODO: To be implemented
-        return Optional.empty();
+        return DatabaseProxy.getEmployees()
+                .stream()
+                .min(Comparator.comparingDouble(Employee::getSalary));
     }
 
     /**
