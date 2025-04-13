@@ -6,6 +6,19 @@ This source code has been created to demonstrate important Java 8 features by Co
 
 ***
 
+#### ▶️ Java 24 Features:
+<table>
+   <tr style="border:none !important;">
+      <td style="border:none !important;">
+         <a href="http://www.youtube.com/watch?feature=player_embedded&v=6JGSivtCYGM
+           " target="_blank"><img src="http://img.youtube.com/vi/6JGSivtCYGM/0.jpg"
+           alt="🔥 Java 24 is Here!🔥 Important Features You Must Know with Code Demos!" width="200" height="150" border="0" /></a>
+      </td>
+   </tr>
+</table>
+
+***
+
 #### ▶️ Optional Class:
 <table>
    <tr style="border:none !important;">

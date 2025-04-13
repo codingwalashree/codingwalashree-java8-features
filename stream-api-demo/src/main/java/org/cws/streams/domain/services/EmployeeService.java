@@ -18,27 +18,30 @@ public class EmployeeService {
 
     /**
      * Get highest paid employee
+     * Stream Methods: max
      * */
     public Optional<Employee> getHighestPaidEmployee() {
-        // TODO: To be implemented
-        return Optional.empty();
+        return employeeRepository.findByHighestSalary();
     }
 
     /**
      * Get lowest paid employee
+     * Stream Methods: min
      * */
     public Optional<Employee> getLowestPaidEmployee() {
-        // TODO: To be implemented
-        return Optional.empty();
+        return employeeRepository.findByLowestSalary();
     }
 
     /**
      * Get employee count having less than given experience
      * Use getEmployeesWithExperienceLessThan
+     * Stream Methods: count
      * */
-    public int countByExperienceLessThan(double experience) {
-        // TODO: To be implemented
-        return 0;
+    public long countByExperienceLessThan(double experience) {
+        return employeeRepository.findByExperienceLessThan(experience)
+                .stream()
+                .peek(System.out::println)
+                .count();
     }
 
     /**
