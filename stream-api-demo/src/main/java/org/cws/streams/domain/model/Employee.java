@@ -93,9 +93,9 @@ public class Employee implements Comparable<Employee> {
         final StringBuffer sb = new StringBuffer("Employee{");
         sb.append("id=").append(id);
         sb.append(", name='").append(name).append('\'');
-        sb.append(", address=").append(address);
-        sb.append(", skills=").append(skills);
-        sb.append(", department=").append(department);
+//        sb.append(", address=").append(address);
+//        sb.append(", skills=").append(skills);
+//        sb.append(", department=").append(department);
         sb.append(", salary=").append(salary);
         sb.append(", experienceInYears=").append(experienceInYears);
         sb.append('}');
