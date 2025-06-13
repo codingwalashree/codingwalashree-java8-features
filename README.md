@@ -63,6 +63,18 @@ This source code has been created to demonstrate important Java 8 features by Co
            " target="_blank"><img src="http://img.youtube.com/vi/hWY8eINc2yA/0.jpg"
            alt="Java Streams: peek(), distinct(), limit(), skip() Explained with Real-World Examples | PART 5" width="200" height="150" border="0" /></a>
       </td>
+      <td style="border:none !important;">
+         <a href="http://www.youtube.com/watch?feature=player_embedded&v=VSQCR8RjaJk
+           " target="_blank"><img src="http://img.youtube.com/vi/VSQCR8RjaJk/0.jpg"
+           alt="Stream API Terminal Operations Explained | forEach, forEachOrdered, count, min, max | PART 6" width="200" height="150" border="0" /></a>
+      </td>
+   </tr>
+   <tr style="border:none !important;">
+      <td style="border:none !important;">
+         <a href="http://www.youtube.com/watch?feature=player_embedded&v=_uZZrhpvy_E
+           " target="_blank"><img src="http://img.youtube.com/vi/_uZZrhpvy_E/0.jpg"
+           alt="Java Stream API – Terminal Operations: findFirst, findAny, allMatch, anyMatch, noneMatch | PART 7" width="200" height="150" border="0" /></a>
+      </td>
    </tr>
 </table>
 

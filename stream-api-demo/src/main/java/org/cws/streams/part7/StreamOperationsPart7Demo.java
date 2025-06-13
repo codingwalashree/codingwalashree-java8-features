@@ -83,10 +83,12 @@ public class StreamOperationsPart7Demo {
         System.out.println("Aren't there any number less than 5? : " + numbers.stream().noneMatch(e -> e > 5));
 
         // Ex2. Are there any/all/no employees having experience less than 10 years?
-        boolean anyMatchSalary = employeeService.getEmployeesWithExperienceLessThan(10)
+        boolean anyMatchSalary = employeeService
+                .getEmployeesWithExperienceLessThan(10)
                 .stream()
                 .anyMatch(e -> e.getSalary() > 20000);
-        System.out.println("Is there any employee having salary > 20000?: " + anyMatchSalary);
+        System.out.println("Is there any employee having salary > 20000?: "
+                + anyMatchSalary);
 
         boolean allMatchSalary = employeeService.getEmployeesWithExperienceLessThan(10)
                 .stream()
