@@ -199,4 +199,8 @@ public class EmployeeRepository {
                 .limit(2)
                 .collect(Collectors.toList());
     }
+
+    public List<Employee> findAll() {
+        return DatabaseProxy.getEmployees();
+    }
 }

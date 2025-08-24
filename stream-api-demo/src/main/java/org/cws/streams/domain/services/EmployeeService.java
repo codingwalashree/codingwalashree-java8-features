@@ -176,4 +176,8 @@ public class EmployeeService {
     public List<Employee> getNextTop3Employees() {
         return employeeRepository.findNextTop3Employees();
     }
+
+    public List<Employee> getAll() {
+        return employeeRepository.findAll();
+    }
 }
