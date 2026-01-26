@@ -2,7 +2,9 @@ package org.cws.streams.domain.repositories;
 
 import org.cws.streams.domain.model.Department;
 import org.cws.streams.domain.model.Employee;
-import java.util.DoubleSummaryStatistics;
+
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -12,46 +14,32 @@ import java.util.Map;
  * */
 public class DepartmentRepository {
     /**
-     * --- distinct() and peek() method demo ---
-     * Get distinct departments for employees having experience less than given experience.
-     * Stream Methods: filter, distinct, peek, collect
-     * */
-    public List<Employee> findByExperienceLessThan(double exp) {
-        // TODO: Yet to be implemented
-        return null;
-    }
-
-    /**
-     * Given a department ID, returns total salary required to be paid to all employees in the given department.
-     * Stream Methods: filter, mapToDouble, reduce, sum
-     * */
-    public double calculateTotalSalaryForDepartment(long deptId) {
-        // TODO: Yet to be implemented
-        return 0.0;
-    }
-
-    /**
      * Group the employees department-wise.
-     * Stream Methods: filter, reduce
+     * Stream Methods: collect
      * */
-    public Map<Department, List<Employee>> aggregateByDepartment() {
-        // TODO: Yet to be implemented
-        return null;
-    }
-
-    /**
-     * Department wise average, min, max, sum of salary
-     * */
-    public Map<Department, DoubleSummaryStatistics> getDepartmentWiseSummaryStatistics() {
-        // TODO: Yet to be implemented
-        return null;
-    }
-
-    /**
-     * Department wise sum of salary for all departments
-     * */
-    public Map<Department, Double> getDepartmentWiseTotalSalary() {
-        // TODO: Yet to be implemented
-        return null;
+    public Map<Department, List<Employee>> employeesByDepartment() {
+        return DatabaseProxy.getEmployees()
+                .stream()
+                .collect(
+                        HashMap::new,
+                        (map, emp) -> {
+                            // accumulator - add employee to the map
+                            Department key = emp.getDepartment();
+                            // if department already present in the map - get the list and add our employee
+                            // if department does not exist, add a new list with current employee
+                            List<Employee> employees = map.getOrDefault(key, new ArrayList<>());
+                            employees.add(emp);
+                            map.put(key, employees);
+                        },
+                        (map1, map2) -> {
+                            // combiner - merge two maps
+                            map2.forEach((key, value) -> {
+                                map1.merge(key, value, (v1, v2) -> {
+                                    v1.addAll(v2);
+                                    return v1;
+                                });
+                            });
+                        }
+                );
     }
 }

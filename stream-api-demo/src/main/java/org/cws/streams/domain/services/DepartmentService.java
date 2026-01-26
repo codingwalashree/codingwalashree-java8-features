@@ -1,8 +1,11 @@
 package org.cws.streams.domain.services;
 
 import org.cws.streams.domain.model.Department;
+import org.cws.streams.domain.model.Employee;
+import org.cws.streams.domain.repositories.DepartmentRepository;
 
 import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 
 /**
@@ -10,7 +13,8 @@ import java.util.stream.Collectors;
  * Service layer for handling Departments data
  * */
 public class DepartmentService {
-    private EmployeeService employeeService = new EmployeeService();
+    private final EmployeeService employeeService = new EmployeeService();
+    private final DepartmentRepository departmentRepository = new DepartmentRepository();
 
     /**
      * --- distinct() and peek() method demo ---
@@ -20,7 +24,11 @@ public class DepartmentService {
     public List<Department> getDepartmentsHavingExperienceLessThan(double exp) {
         return employeeService.getEmployeesWithExperienceLessThan(exp)
                 .stream()
-                .map(e -> e.getDepartment())
+                .map(Employee::getDepartment)
                 .collect(Collectors.toList());
+    }
+
+    public Map<Department, List<Employee>> getEmployeesByDepartment() {
+        return departmentRepository.employeesByDepartment();
     }
 }

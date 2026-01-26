@@ -14,7 +14,7 @@ import java.util.stream.Collectors;
  * Return minimal information required to outside world.
  * */
 public class EmployeeService {
-    private EmployeeRepository employeeRepository = new EmployeeRepository();
+    private final EmployeeRepository employeeRepository = new EmployeeRepository();
 
     /**
      * Get highest paid employee
@@ -179,5 +179,11 @@ public class EmployeeService {
 
     public List<Employee> getAll() {
         return employeeRepository.findAll();
+    }
+
+    public static void printEmployees(List<Employee> employees) {
+        employees.forEach( employee ->
+                System.out.printf("%n%s", employee.toString())
+        );
     }
 }

@@ -90,16 +90,18 @@ public class Employee implements Comparable<Employee> {
 
     @Override
     public String toString() {
-        final StringBuffer sb = new StringBuffer("Employee{");
-        sb.append("id=").append(id);
-        sb.append(", name='").append(name).append('\'');
-//        sb.append(", address=").append(address);
-//        sb.append(", skills=").append(skills);
-//        sb.append(", department=").append(department);
-        sb.append(", salary=").append(salary);
-        sb.append(", experienceInYears=").append(experienceInYears);
-        sb.append('}');
-        return sb.toString();
+//        final StringBuffer sb = new StringBuffer("Employee{");
+//        sb.append("id=").append(id);
+//        sb.append(", name='").append(name).append('\'');
+////        sb.append(", address=").append(address);
+////        sb.append(", skills=").append(skills);
+////        sb.append(", department=").append(department);
+//        sb.append(", salary=").append(salary);
+//        sb.append(", experienceInYears=").append(experienceInYears);
+//        sb.append('}');
+//        return sb.toString();
+        return String.format("Employee ID: %s, Name: %s, Department: %s, Salary: %f",
+                id, name, department.getName(), salary);
     }
 
     @Override
