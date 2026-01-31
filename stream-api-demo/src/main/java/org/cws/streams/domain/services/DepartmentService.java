@@ -6,6 +6,7 @@ import org.cws.streams.domain.repositories.DepartmentRepository;
 
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 /**
@@ -30,5 +31,17 @@ public class DepartmentService {
 
     public Map<Department, List<Employee>> getEmployeesByDepartment() {
         return departmentRepository.employeesByDepartment();
+    }
+
+    public Map<Department, List<Employee>> getEmployeesByDepartmentUsingGroupBy() {
+        return departmentRepository.employeesByDepartmentUsingGroupingBy();
+    }
+
+    public Map<Department, Set<Long>> getEmployeeIdsByDepartment() {
+        return departmentRepository.findEmployeeIdsByDepartment();
+    }
+
+    public Map<Department, Double> getAverageSalaryByDepartment() {
+        return departmentRepository.findAverageSalaryByDepartment();
     }
 }

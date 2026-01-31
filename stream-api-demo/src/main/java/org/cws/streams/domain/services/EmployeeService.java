@@ -4,6 +4,7 @@ import org.cws.streams.domain.model.EmpDeptDto;
 import org.cws.streams.domain.model.Employee;
 import org.cws.streams.domain.repositories.EmployeeRepository;
 
+import java.util.Collection;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
@@ -181,7 +182,7 @@ public class EmployeeService {
         return employeeRepository.findAll();
     }
 
-    public static void printEmployees(List<Employee> employees) {
+    public static void printEmployees(Collection<Employee> employees) {
         employees.forEach( employee ->
                 System.out.printf("%n%s", employee.toString())
         );

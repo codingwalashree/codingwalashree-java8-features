@@ -14,6 +14,8 @@ public class StreamCollectDemo {
     public static void main(String[] args) {
         // simpleCollectDemo();
         getDepartmentWiseEmployees();
+
+        groupingByCollectorsDemo();
     }
 
     /**
@@ -36,10 +38,39 @@ public class StreamCollectDemo {
      * Get list of employees grouped by department
      * */
     public static void getDepartmentWiseEmployees() {
+        System.out.println("In getDepartmentWiseEmployees:");
         Map<Department, List<Employee>> deptEmps = departmentService.getEmployeesByDepartment();
         deptEmps.forEach((dept, employees) -> {
             System.out.println("\n\nEmployees in department " + dept.getName() + ":");
             EmployeeService.printEmployees(employees);
         });
+    }
+
+    /**
+     * Real-project structure
+     * collect method with groupingBy, mapping and averagingDouble collectors
+     * */
+    public static void groupingByCollectorsDemo() {
+        // Get employees by department
+        System.out.println("\n\nGet employees by department using groupingBy collector:");
+        departmentService.getEmployeesByDepartmentUsingGroupBy()
+                .forEach((dept, employees) -> {
+                    System.out.println("\n\nEmployees in department " + dept.getName() + ":");
+                    EmployeeService.printEmployees(employees);
+                });
+        // Get employee ids by department
+        System.out.println("\n\nGet employee ids by department using groupingBy collector:");
+        departmentService.getEmployeeIdsByDepartment()
+                .forEach((dept, employeeIds) -> {
+                    System.out.println("\n\nEmployee IDs in department:" + dept.getName() + " :" + employeeIds);
+                });
+
+        // Get avg. salary of employees per department
+        System.out.println("\n\nGet avg. salary of employees per department:");
+        departmentService.getAverageSalaryByDepartment()
+                .forEach((dept, avgSalary) ->
+                    System.out.println("\nDepartment " + dept.getName() + " has avg salary of: " + avgSalary)
+                );
+
     }
 }

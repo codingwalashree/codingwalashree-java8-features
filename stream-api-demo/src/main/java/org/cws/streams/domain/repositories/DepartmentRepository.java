@@ -3,10 +3,8 @@ package org.cws.streams.domain.repositories;
 import org.cws.streams.domain.model.Department;
 import org.cws.streams.domain.model.Employee;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
+import java.util.stream.Collectors;
 
 /**
  * @author CodingWalaShree
@@ -41,5 +39,37 @@ public class DepartmentRepository {
                             });
                         }
                 );
+    }
+
+    /**
+     * Group the employees department-wise using grouping by collector.
+     * Stream Methods: collect [using Collectors.groupingBy]
+     * */
+    public Map<Department, List<Employee>> employeesByDepartmentUsingGroupingBy() {
+        return DatabaseProxy.getEmployees()
+                .stream()
+                .collect(Collectors.groupingBy(Employee::getDepartment));
+    }
+
+    /**
+     * Group the employee IDs department-wise using grouping by collector.
+     * Stream Methods: collect [using Collectors.groupingBy and Collectors.mapping]
+     * */
+    public Map<Department, Set<Long>> findEmployeeIdsByDepartment() {
+        return DatabaseProxy.getEmployees()
+                .stream()
+                .collect(Collectors.groupingBy(Employee::getDepartment,
+                            Collectors.mapping(Employee::getId, Collectors.toSet())));
+    }
+
+    /**
+     * Calculate department-wise average salary using grouping by collector.
+     * Stream Methods: collect [using Collectors.groupingBy, Collectors.mapping and Collectors.averagingDouble]
+     * */
+    public Map<Department, Double> findAverageSalaryByDepartment() {
+        return DatabaseProxy.getEmployees()
+                .stream()
+                .collect(Collectors.groupingBy(Employee::getDepartment,
+                            Collectors.averagingDouble(Employee::getSalary)));
     }
 }
